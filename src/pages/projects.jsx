@@ -3,47 +3,47 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@public/images/logos/peak.svg'
+import logoLucid from '@public/images/logos/lucid.png'
 import logoCosmos from '@public/images/logos/peak.svg'
-import logoHelioStream from '@public/images/logos/peak.svg'
-import logoOpenShuttle from '@public/images/logos/peak.svg'
+import logoOpsiq from '@public/images/logos/opsiq.svg'
+import logoRealtor from '@public/images/logos/realtor.svg'
 import logoPlanetaria from '@public/images/logos/peak.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'RevCommerce',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'RevCommerce de-couples the front and back ends into an innovative module concept. As a headless system, you can discreetly optimize one section of your system without disrupting others to make changes faster, easier and less costly.',
+    link: { href: 'https://revcommerce.com', label: 'revcommerce.com' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: "The People's Fire",
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      "The People's Fire is an app designed to bring transparency to philanthropy. It helps users track the flow of donations and see how their contributions are being used. The app aims to increase trust and accountability in the world of charitable giving.",
+    link: { href: '#', label: 'Currently under construction' },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'OPSIQ',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'OPSIQ is a comprehensive software for running an inside sales team. It offers a range of features, including real-time reporting, automated lead management, and demo scheduling all powered by a powerful sales algorithm.',
+    link: { href: 'https://opsiq.ai', label: 'opsiq.ai' },
+    logo: logoOpsiq,
+  },
+  {
+    name: 'Imprint: Learn Visually',
+    description:
+      "Our mission is to make the world's most important knowledge easy to learn, internalize, and apply to your life. By visualizing and clarifying complex insights from the world's greatest thinkers, we're helping people around the world master essential topics and learn new skills, quickly and easily.",
+    link: { href: 'https://imprintapp.com', label: 'imprintapp.com' },
+    logo: logoLucid,
+  },
+  {
+    name: 'Realtor.com',
+    description:
+      'At Realtor.com my team lead the company wide task to improve A11y support on our Flutter app. After finishing, we were promoted to lead support for the entire NewsCorp organization.',
+    link: { href: 'https://realtor.com', label: 'realtor.com' },
+    logo: logoRealtor,
   },
 ]
 

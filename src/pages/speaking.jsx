@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { Button } from '@/components/Button'
+import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
@@ -32,14 +34,14 @@ export default function Speaking() {
         <title>Speaking - Matthew Lewis</title>
         <meta
           name="description"
-          content="I’ve spoken at events all around the world and been interviewed for many podcasts."
+          content="I’m available for speaking events around the world."
         />
       </Head>
       <SimpleLayout
-        title="I’ve spoken at events all around the world and been interviewed for many podcasts."
+        title="I’m available for speaking events around the world."
         intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
       >
-        <div className="space-y-20">
+        {/* <div className="space-y-20">
           <SpeakingSection title="Conferences">
             <Appearance
               href="#"
@@ -79,6 +81,18 @@ export default function Speaking() {
               cta="Listen to podcast"
             />
           </SpeakingSection>
+        </div> */}
+        <div className="space-y-20">
+          <Button
+            variant="secondary"
+            className="group mt-6 w-full max-w-2xl"
+            href={
+              'mailto:matthew.a.lewis7@gmail.com?subject=Speaking Opportunity'
+            }
+          >
+            <EnvelopeIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+            Contact Me about Speaking
+          </Button>
         </div>
       </SimpleLayout>
     </>

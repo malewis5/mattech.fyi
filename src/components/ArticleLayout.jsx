@@ -35,6 +35,8 @@ export function ArticleLayout({
       <Head>
         <title>{`${meta.title} - Matthew Lewis`}</title>
         <meta name="description" content={meta.description} />
+        <meta name="author" content={meta.author} />
+        <meta name="publisher" content={meta.publisher} />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
