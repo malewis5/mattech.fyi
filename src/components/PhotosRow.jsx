@@ -24,7 +24,7 @@ export function PhotosRow({ photosArray }) {
           >
             <div
               style={{ zIndex: 2 }}
-              className="group group relative flex h-full w-full flex-col items-center justify-center hover:bg-[#00000090]"
+              className="group group relative flex h-full w-full flex-col items-center justify-center p-2 hover:bg-[#00000090]"
             >
               <p className="text-white opacity-0 group-hover:opacity-100">
                 {location}
