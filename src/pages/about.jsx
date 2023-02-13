@@ -118,7 +118,7 @@ export default function About() {
                 Follow on Twitter
               </SocialLink>
               <SocialLink
-                href="https://instagram.com/matt____lewis?igshid=MWI4MTIyMDE="
+                href="https://instagram.com/matt____lewis?igshid=YmMyMTA2M2Y="
                 icon={InstagramIcon}
                 className="mt-4"
               >
