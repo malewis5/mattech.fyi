@@ -39,7 +39,7 @@ export default function Speaking() {
       </Head>
       <SimpleLayout
         title="I’m available for speaking events around the world."
-        intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+        intro="One of my favorite ways to share my ideas is live on stage. Written word is good - you’re reading it right now - but there’s much more communication bandwidth in a spoken conversation than there is in writing."
       >
         {/* <div className="space-y-20">
           <SpeakingSection title="Conferences">
@@ -82,6 +82,16 @@ export default function Speaking() {
             />
           </SpeakingSection>
         </div> */}
+        <div className="max-w-2xl">
+          <h2 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            And on my own mic.
+          </h2>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I love podcast interviews. They give me the opportunity to answer
+            questions instead of just presenting my opinions.
+          </p>
+        </div>
+        <div className="mt-8 sm:mt-10" />
         <div className="space-y-20">
           <Button
             variant="secondary"
