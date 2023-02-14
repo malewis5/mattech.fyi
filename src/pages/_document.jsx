@@ -40,7 +40,10 @@ export default function Document() {
     <Html className="h-full antialiased" lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
+        <link rel="canonical" href="https://www.mattech.fyi" key="canonical" />
         <meta property="og:image" content="/og.png" />
+        <meta name="robots" content="all" />
+        <meta property="author" content="Matthew Lewis" />
         <link
           rel="alternate"
           type="application/rss+xml"

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mattech.fyi
+
+# Sitemaps
+Sitemap: https://www.mattech.fyi/sitemap.xml
