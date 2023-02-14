@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Analytics } from '@vercel/analytics/react'
 
 import '@/styles/tailwind.css'
+import '@/styles/global.css'
 import 'focus-visible'
 
 function usePrevious(value) {

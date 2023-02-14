@@ -10,7 +10,7 @@ export function PhotosRow({ photosArray }) {
   return (
     <div className="mt-16 sm:mt-20">
       <div
-        className={`-my-4 flex flex-row items-start justify-start gap-5 overflow-y-scroll py-4 sm:items-start sm:gap-8`}
+        className={`-my-4 flex flex-row items-start justify-start gap-5 overflow-x-scroll py-4 sm:items-start sm:gap-8`}
       >
         {photosArray?.map(({ image, location, author }, imageIndex) => (
           <div

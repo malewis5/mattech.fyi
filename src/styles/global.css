@@ -1,0 +1,20 @@
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  scrollbar-color: rgb(0 0 0 / 80%);
+  scrollbar-width: thin;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(255 255 255 / 10%);
+  border-radius: 10px, 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #242321;
+  background-image: #000;
+  border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+}
