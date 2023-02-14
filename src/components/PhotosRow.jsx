@@ -6,12 +6,11 @@ export function PhotosRow({ photosArray }) {
   const router = useRouter()
   const isHomePage = router.pathname === '/'
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+
   return (
     <div className="mt-16 sm:mt-20">
       <div
-        className={`-my-4 flex ${
-          !isHomePage && 'flex-col'
-        } items-center justify-center gap-5 overflow-hidden py-4 sm:flex-row sm:items-start sm:gap-8`}
+        className={`-my-4 flex flex-row items-start justify-start gap-5 overflow-y-scroll py-4 sm:items-start sm:gap-8`}
       >
         {photosArray?.map(({ image, location, author }, imageIndex) => (
           <div
@@ -24,12 +23,10 @@ export function PhotosRow({ photosArray }) {
           >
             <div
               style={{ zIndex: 2 }}
-              className="group group relative flex h-full w-full flex-col items-center justify-center p-2 hover:bg-[#00000090]"
+              className="group group relative flex h-full w-full flex-col items-center justify-center p-2 text-xs text-white hover:bg-[#00000090]"
             >
-              <p className="text-white opacity-0 group-hover:opacity-100">
-                {location}
-              </p>
-              <p className="text-xs text-white opacity-0 group-hover:opacity-100">
+              <p className="opacity-0 group-hover:opacity-100">{location}</p>
+              <p className="text-center opacity-0 group-hover:opacity-100">
                 Photo by: {author ?? 'Matt Lewis & Chad D. Jasso'}
               </p>
             </div>

@@ -21,6 +21,8 @@ import image2 from '@public/images/image-2.webp'
 import image3 from '@public/images/image-3.webp'
 import image4 from '@public/images/image-4.webp'
 import image5 from '@public/images/image-5.webp'
+import image7 from '@public/images/image-7.webp'
+import image8 from '@public/images/image-8.webp'
 
 const photosArray = [
   { image: image1, location: 'Moab, Utah', priority: true },
@@ -33,6 +35,13 @@ const photosArray = [
   },
   { image: image4, location: 'Death Valley, California', priority: true },
   { image: image5, location: 'Moab, Utah', priority: true },
+  { image: image7, location: 'Yosemite, California', priority: true },
+  {
+    image: image8,
+    location: 'Santa Teresa, Costa Rica',
+    priority: true,
+    author: 'Matt Lewis',
+  },
 ]
 
 export default function Home({ articles }) {
