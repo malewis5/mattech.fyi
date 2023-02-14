@@ -35,11 +35,11 @@ const photosArray = [
   },
   { image: image4, location: 'Death Valley, California', priority: true },
   { image: image5, location: 'Moab, Utah', priority: true },
-  { image: image7, location: 'Yosemite, California', priority: true },
+  { image: image7, location: 'Yosemite, California', priority: false },
   {
     image: image8,
     location: 'Santa Teresa, Costa Rica',
-    priority: true,
+    priority: false,
     author: 'Matt Lewis',
   },
 ]
