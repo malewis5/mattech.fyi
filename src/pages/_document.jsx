@@ -40,6 +40,7 @@ export default function Document() {
     <Html className="h-full antialiased" lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
+        <meta property="og:image" content="/og.png" />
         <link
           rel="alternate"
           type="application/rss+xml"
