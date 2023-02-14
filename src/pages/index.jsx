@@ -25,7 +25,7 @@ import image7 from '@public/images/image-7.webp'
 import image8 from '@public/images/image-8.webp'
 
 const photosArray = [
-  { image: image1, location: 'Moab, Utah', priority: true },
+  { image: image1, location: 'Mariposa Grove, California', priority: true },
   { image: image2, location: 'Bryce Canyon, Utah', priority: true },
   {
     image: image3,
