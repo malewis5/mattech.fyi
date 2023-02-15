@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
+import ogImage from '../../public/og.png'
 
 function ArrowLeftIcon(props) {
   return (
@@ -37,6 +38,7 @@ export function ArticleLayout({
         <meta name="description" content={meta.description} />
         <meta name="author" content={meta.author} />
         <meta name="publisher" content={meta.publisher} />
+        <meta name="og:image" content={meta?.image ?? ogImage} />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
