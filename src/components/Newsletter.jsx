@@ -9,6 +9,9 @@ export const Newsletter = () => {
   const router = useRouter()
   return (
     <Formik
+      validateOnBlur={false}
+      validateOnChange={false}
+      validateOnMount={false}
       initialValues={{ email: '' }}
       validate={(values) => {
         const errors = {}
