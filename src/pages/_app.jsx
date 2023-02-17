@@ -25,7 +25,7 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
