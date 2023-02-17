@@ -2,8 +2,8 @@ import { EnvelopeIcon } from '@heroicons/react/24/outline'
 import { Button } from '@/components/Button'
 import { submit_hubspot_form } from '@/pages/api/submitNewsletterSignup'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
+import { event } from 'nextjs-google-analytics'
 
 export const Newsletter = () => {
   const router = useRouter()
@@ -25,6 +25,10 @@ export const Newsletter = () => {
         setSubmitting(true)
         try {
           await submit_hubspot_form(values.email)
+          event('subscribe', {
+            category: 'newsletter',
+            label: values.email,
+          })
           setSubmitting(false)
           router.push('/thank-you')
         } catch (e) {
