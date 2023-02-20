@@ -104,7 +104,7 @@ export default function About() {
                 freedom and flexibility that remote work provides and am always
                 looking for new opportunities to travel and work from new and
                 exciting places. Whether it&apos;s working from a beach in Costa
-                Rica or from a mountain cabin in the Lake Tahoe, I am always
+                Rica or from a mountain cabin in Lake Tahoe, I am always
                 striving to find new ways to combine my passion for work and
                 travel. I believe that this unique combination has allowed me to
                 be more productive, creative, and happy in my personal and
