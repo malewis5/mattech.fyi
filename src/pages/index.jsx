@@ -59,7 +59,7 @@ const photosArray = [
   {
     image: image4,
     location: 'Death Valley, California',
-    priority: false,
+    priority: true,
     author: 'Matt Lewis',
   },
 ]
