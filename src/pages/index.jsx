@@ -24,6 +24,7 @@ import image5 from '@public/images/image-5.webp'
 import image7 from '@public/images/image-7.webp'
 import image8 from '@public/images/image-8.webp'
 import image9 from '@public/images/image-9.webp'
+import image10 from '@public/images/image-10.webp'
 
 const photosArray = [
   { image: image1, location: 'Mariposa Grove, California', priority: true },
@@ -40,13 +41,25 @@ const photosArray = [
     author: 'Vercel',
   },
   { image: image2, location: 'Bryce Canyon, Utah', priority: true },
-
+  {
+    image: image10,
+    location: 'Black Canyon of the Gunnison, Colorado',
+    priority: true,
+    author: 'Matt Lewis',
+  },
   { image: image5, location: 'Moab, Utah', priority: true },
+
   { image: image7, location: 'Yosemite, California', priority: true },
   {
     image: image8,
     location: 'Santa Teresa, Costa Rica',
     priority: true,
+    author: 'Matt Lewis',
+  },
+  {
+    image: image4,
+    location: 'Death Valley, California',
+    priority: false,
     author: 'Matt Lewis',
   },
 ]
