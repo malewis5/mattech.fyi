@@ -9,6 +9,7 @@ import logoOpsiq from '@public/images/logos/opsiq.svg'
 import logoRealtor from '@public/images/logos/realtor.svg'
 import logoPlanetaria from '@public/images/logos/peak.svg'
 import logoIndustry from '@public/images/logos/industry.svg'
+import logoGateway from '@public/images/logos/gateway.png'
 
 const projects = [
   {
@@ -61,6 +62,16 @@ const projects = [
     ],
     link: { href: '#', label: 'Not Available' },
     logo: logoIndustry,
+  },
+  {
+    name: 'Gateway Subs',
+    description:
+      'A headless ecommerce website for Gatewaysubs.com allowing users to place online orders, contact the business and increase their online presence.',
+    stack: [
+      'React, Nextjs, Postgres, Supabase, Serverless Functions, Stripe, AWS, Clover, UberEats, Doordash',
+    ],
+    link: { href: 'https://gatewaysubs.com', label: 'gatewaysubs.com' },
+    logo: logoGateway,
   },
 ]
 
