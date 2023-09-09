@@ -46,7 +46,7 @@ export default function About() {
         <title>About - Matt Lewis</title>
         <meta
           name="description"
-          content="I’m Matt Lewis. I live remotely, where I engineer the future."
+          content="Hey 👋 I’m Matt Lewis. Here's some more info. Thank you for taking a look at my site!"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
