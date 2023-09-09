@@ -63,52 +63,61 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Matt Lewis. I live remotely, where I engineer the future.
+              Hey 👋 I’m Matt Lewis. Thank you for taking a look at my site!
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I am Matt Lewis, a software engineer with a background in
-                chemical engineering. After obtaining my degree in chemical
-                engineering, I realized that my true passion was in software
-                engineering. I was fascinated by the way that software could be
-                used to automate processes and make things more efficient. This
-                realization led me to switch careers and focus on software
-                engineering.
+                I&apos;m Matt Lewis, and I&apos;ve spent my career at the
+                intersection of engineering and innovation. I originally
+                graduated with a degree in chemical engineering, where I won 1st
+                place in the Reactor Design Competition and led the UA
+                Hackathon. Despite my achievements, I discovered my true calling
+                lay in the digital realm. This pivot to software engineering
+                wasn&apos;t just a career change; it was a dedication to the art
+                of problem-solving through code.
               </p>
+
               <p>
-                Now, I work in the ecommerce industry and specialize in cloud
-                computing. I leverage my knowledge of both chemical engineering
-                and software engineering to create innovative solutions for my
-                clients. I understand the importance of stability and
-                reliability in the systems I build and am always looking for
-                ways to improve the user experience. I am known for my ability
-                to take complex problems and break them down into manageable
-                tasks.
+                Today, I work in the ecommerce industry, specializing in
+                headless, cloud computing solutions. What sets me apart is the
+                unique problem-solving approach I&apos;ve honed through my
+                chemical engineering background. Chemical engineering taught me
+                not just the laws of physics, but also the art of balancing
+                fast, intuitive thinking with slow, reasoned analysis. Whether
+                I&apos;m dealing with a nuclear reactor or a distributed
+                database, I rely on these core principles to guide me. In both
+                realms, understanding the fundamental building blocks—be it
+                physical laws or fundamental data structures—enables me to
+                dissect complex challenges and tackle them effectively. I
+                don&apos;t just develop solutions; I excel at breaking down
+                intricate issues into manageable tasks, always with an eye on
+                long-term success.
               </p>
+
               <p>
-                My work has not gone unnoticed and I have quickly risen through
-                the ranks to become a respected leader in my field. I am often
-                sought after by clients and colleagues alike for my expertise
-                and guidance. I am a strong believer in the power of technology
-                and am always looking for new ways to make a positive impact in
-                the world through my work. I continue to push the boundaries of
-                what is possible with cloud computing and am committed to
-                staying at the forefront of this rapidly evolving field.
+                My work has garnered attention, allowing me to make meaningful
+                contributions and be a trusted resource for clients and
+                colleagues alike. But my insights aren&apos;t confined to the
+                office; they&apos;re influenced by my broader experiences and
+                observations, including those in nature. Whether it&apos;s
+                understanding the complex system that is our planet, or drawing
+                inspiration from the mathematics of nature, I leverage these
+                experiences to think creatively and solve problems. After all,
+                Earth&apos;s systems are among the most robust and beautiful
+                ever designed, and they offer valuable lessons in resilience and
+                balance that I apply to my professional challenges.
               </p>
+
               <p>
-                In addition to my passion for technology, I am also a firm
-                believer in the power of remote work and travel. I have found
-                that being able to work from anywhere in the world has allowed
-                me to have a better work-life balance and has also broadened my
-                horizons in ways that I never thought were possible. I love the
-                freedom and flexibility that remote work provides and am always
-                looking for new opportunities to travel and work from new and
-                exciting places. Whether it&apos;s working from a beach in Costa
-                Rica or from a mountain cabin in Lake Tahoe, I am always
-                striving to find new ways to combine my passion for work and
-                travel. I believe that this unique combination has allowed me to
-                be more productive, creative, and happy in my personal and
-                professional life.
+                To sum up, my journey is not merely a tale of projects and
+                achievements; it&apos;s a story of relentless curiosity and a
+                commitment to bring enduring value to the table. Whether
+                I&apos;m deciphering complex algorithms or finding inspiration
+                in the spiraling patterns of a nautilus shell, I don&apos;t
+                merely adapt to my environment—I elevate it. My goal is to
+                continue leveraging this holistic, value-driven approach to
+                solve intricate challenges in the ecommerce world and beyond. In
+                essence, I don&apos;t just build solutions; I create value.
               </p>
             </div>
           </div>

@@ -73,7 +73,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Matt, a remote software engineer and entrepreneur. I’m the President and Founder of MatTech LLC, where we empower regular people to leverage technology everyday."
+          content="I'm Matt, a NYC-based software engineer specializing in ecommerce and cloud solutions. Driven by innovation, I excel at turning complex challenges into enduring value."
         />
       </Head>
 
@@ -83,9 +83,9 @@ export default function Home({ articles }) {
             Software engineer, founder, and amateur explorer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Matt, a remote software engineer and entrepreneur. I’m the
-            President and Founder of MatTech LLC, where we empower regular
-            people to leverage technology everyday.
+            I&apos;m Matt, a NYC-based software engineer specializing in
+            ecommerce and cloud solutions. Driven by innovation, I excel at
+            turning complex challenges into enduring value.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
