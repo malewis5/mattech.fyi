@@ -5,8 +5,8 @@ export default function Booking() {
   return (
     // <!-- Google Calendar Appointment Scheduling begin -->
     <SimpleLayout
-      title="Book A Meeting"
-      intro="I'm happy to jump on a call and answer any questions you may have about my projects or services."
+      title="Let's talk!"
+      intro="Eager to dive into details about my projects or services on a call. Open for casual conversations too—feel free to book some time!"
     >
       <iframe
         src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Mi_PLWwGAEC2TPV4tBrhN9URxdv_809jMzD78VcNWrQUmFWNqBxetuxXGT-1txj-bZJ6VUDS9?gv=true"
