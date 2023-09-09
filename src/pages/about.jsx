@@ -69,12 +69,12 @@ export default function About() {
               <p>
                 I&apos;m Matt Lewis, and I&apos;ve spent my career at the
                 intersection of engineering and innovation. I originally
-                graduated with a degree in chemical engineering, where I won 1st
-                place in the Reactor Design Competition and led the UA
-                Hackathon. Despite my achievements, I discovered my true calling
-                lay in the digital realm. This pivot to software engineering
-                wasn&apos;t just a career change; it was a dedication to the art
-                of problem-solving through code.
+                graduated with a degree in chemical engineering on a full
+                tuition scholarship, where I won 1st place in the Reactor Design
+                Competition. Despite my achievements, I discovered my true
+                calling lay waiting for me in the digital realm. This pivot to
+                software engineering wasn&apos;t just a career change; it was a
+                dedication to the art of problem-solving through code.
               </p>
 
               <p>
