@@ -6,6 +6,7 @@ import {
   AmazonIcon,
   PeakIcon,
   MatTechIcon,
+  VercelIcon,
 } from '@public/images/logos'
 
 export const Resume = () => {
@@ -19,6 +20,16 @@ export const Resume = () => {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
+    },
+    {
+      company: 'Vercel',
+      title: 'Software Engineer',
+      logo: VercelIcon,
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      }
     },
     {
       company: 'PeakActivity',
