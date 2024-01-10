@@ -36,7 +36,7 @@ export function PhotosRow({ photosArray }) {
               alt={`Matt at ${location}`}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
-              priority={image?.priority ?? false}
+              priority={true}
             />
           </div>
         ))}
