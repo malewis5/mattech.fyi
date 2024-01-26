@@ -36,10 +36,7 @@ export const Resume = () => {
       title: 'Senior Software Engineer',
       logo: PeakIcon,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: '2023',
     },
     {
       company: 'Rapptr Labs',
