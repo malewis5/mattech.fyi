@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { siteConfig } from "@/app/siteConfig"
-import useScroll from "@/lib/useScroll"
-import { cx } from "@/lib/utils"
-import { RiCloseFill, RiMenuFill } from "@remixicon/react"
-import Link from "next/link"
-import React from "react"
-import { SolarLogo } from "../../../public/SolarLogo"
-import { Button } from "../Button"
+import { siteConfig } from "@/app/siteConfig";
+import useScroll from "@/lib/useScroll";
+import { cx } from "@/lib/utils";
+import { RiCloseFill, RiMenuFill } from "@remixicon/react";
+import Link from "next/link";
+import React from "react";
+import { SolarLogo } from "../../../public/SolarLogo";
+import { Button } from "../Button";
 
 export function NavBar() {
-  const [open, setOpen] = React.useState(false)
-  const scrolled = useScroll(15)
+  const [open, setOpen] = React.useState(false);
+  const scrolled = useScroll(15);
 
   return (
     <header
@@ -19,7 +19,7 @@ export function NavBar() {
         "fixed inset-x-4 top-4 z-50 mx-auto flex max-w-6xl justify-center rounded-lg border border-transparent px-3 py-3 transition duration-300",
         scrolled || open
           ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm"
-          : "bg-white/0",
+          : "bg-white/0"
       )}
     >
       <div className="w-full md:my-auto">
@@ -34,7 +34,7 @@ export function NavBar() {
                 Solutions
               </Link>
               <Link className="px-2 py-1 text-gray-900" href="#farm-management">
-                Farm Management
+                Portfolio
               </Link>
               <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
                 Analytics
@@ -69,7 +69,7 @@ export function NavBar() {
         <nav
           className={cx(
             "mt-6 flex flex-col gap-6 text-lg ease-in-out will-change-transform sm:hidden",
-            open ? "" : "hidden",
+            open ? "" : "hidden"
           )}
         >
           <ul className="space-y-4 font-medium">
@@ -77,7 +77,7 @@ export function NavBar() {
               <Link href="#solutions">Solutions</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#farm-management">Farm Management</Link>
+              <Link href="#portfolio">Portfolio</Link>
             </li>
             <li onClick={() => setOpen(false)}>
               <Link href="#solar-analytics">Analytics</Link>
@@ -89,5 +89,5 @@ export function NavBar() {
         </nav>
       </div>
     </header>
-  )
+  );
 }

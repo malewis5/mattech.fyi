@@ -11,7 +11,7 @@ export function SolarAnalytics() {
           id="solar-analytics"
           className="relative scroll-my-24 text-lg font-semibold tracking-tight text-teal-500"
         >
-          Solar Analytics
+          User Analytics
           <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
         </h2>
         <p className="mt-2 max-w-lg text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
