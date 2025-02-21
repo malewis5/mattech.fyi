@@ -43,7 +43,7 @@ export function NavBar() {
           </nav>
           <Link href="/quote" passHref>
             <Button
-              variant="secondary"
+              variant="primary"
               className="hidden h-10 font-semibold sm:block"
             >
               Get a quote
