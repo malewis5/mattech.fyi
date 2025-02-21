@@ -2,26 +2,25 @@ import AnalyticsIllustration from "./AnalyticsIllustration";
 
 export function SolarAnalytics() {
   return (
-    <section
-      aria-labelledby="solar-analytics"
-      className="relative mx-auto w-full max-w-6xl overflow-hidden"
-    >
-      <div>
-        <h2
-          id="solar-analytics"
-          className="relative scroll-my-24 text-lg font-semibold tracking-tight text-teal-500"
-        >
-          User Analytics
-          <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
-        </h2>
-        <p className="mt-2 max-w-lg text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-          Turn your data into profitable strategies with real-time insights
-        </p>
-      </div>
-      <div className="*:pointer-events-none">
-        <AnalyticsIllustration />
-      </div>
-      {/* <Divider className="mt-0"></Divider>
+    <>
+      <div id="solar-analytics" className="mb-40" />
+      <section
+        aria-labelledby="solar-analytics"
+        className="relative mx-auto w-full max-w-6xl overflow-hidden"
+      >
+        <div>
+          <h2 className="relative scroll-my-24 text-lg font-semibold tracking-tight text-teal-500">
+            User Analytics
+            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
+          </h2>
+          <p className="mt-2 max-w-lg text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
+            Turn your data into profitable strategies with real-time insights
+          </p>
+        </div>
+        <div className="*:pointer-events-none">
+          <AnalyticsIllustration />
+        </div>
+        {/* <Divider className="mt-0"></Divider>
       <div className="grid grid-cols-1 grid-rows-2 gap-6 md:grid-cols-4 md:grid-rows-1">
         <StickerCard
           Icon={RiNavigationFill}
@@ -44,6 +43,7 @@ export function SolarAnalytics() {
           description="Advanced analytics platform that predicts crop yields."
         />
       </div> */}
-    </section>
+      </section>
+    </>
   );
 }
