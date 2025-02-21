@@ -1,19 +1,24 @@
 import {
-  RiCarFill,
+  RiBarcodeFill,
+  RiCellphoneFill,
   RiCheckLine,
-  RiCircleLine,
+  RiCloudFill,
   RiCodepenLine,
   RiContrast2Line,
+  RiCustomerService2Fill,
   RiFullscreenFill,
-  RiLoaderFill,
   RiNotification2Line,
-  RiPlaneFill,
-  RiTruckFill,
-} from "@remixicon/react"
-import { SolarMark } from "../../../public/SolarMark"
-import { Icons } from "../Icons"
-import { Orbit } from "../Orbit"
-import ChipViz from "./ChipViz"
+  RiShoppingCart2Fill,
+  RiUser2Line,
+  RiUser3Fill,
+  RiUser4Line,
+  RiUser5Fill,
+  RiUser6Line,
+  RiUserFill,
+} from "@remixicon/react";
+import { SolarMark } from "../../../public/SolarMark";
+import { Orbit } from "../Orbit";
+import ChipViz from "./ChipViz";
 
 export default function Features() {
   return (
@@ -129,17 +134,17 @@ export default function Features() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-0">
         {/* Content */}
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Smart Farming Solutions
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-teal-500">
+            Cutting Edge Digital Solutions
+            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            A network of autonomous systems for complete farm monitoring
+            A network of integrated solutions for complete digital coverage
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Deploy intelligent monitoring and automated response systems across
-            your fields, irrigation networks, and aerial operations with our
-            integrated platform.
+            Deploy advanced design, robust architecture, and automated tools
+            across your online presence—websites, applications, and beyond—with
+            our all-in-one solutions.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -158,7 +163,7 @@ export default function Features() {
                 height="64"
               >
                 {Array.from({ length: 17 }, (_, i) => {
-                  const offset = i * 8
+                  const offset = i * 8;
                   return (
                     <path
                       key={i}
@@ -166,7 +171,7 @@ export default function Features() {
                       className="stroke-gray-200/70"
                       strokeWidth="1"
                     />
-                  )
+                  );
                 })}
               </pattern>
             </defs>
@@ -187,15 +192,15 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <RiTruckFill className="z-10 size-5 text-gray-900" />
+                    <RiBarcodeFill className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-red-500 p-1 text-xs ring-1 ring-gray-200">
-                          <RiCircleLine className="size-3 shrink-0 text-white" />
+                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
+                          <RiCheckLine className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
-                          Drivetrain Error
+                          Point of Sale
                         </div>
                       </div>
                     </div>
@@ -203,7 +208,7 @@ export default function Features() {
                       style={{
                         animationDelay: "1s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
                     ></div>
                   </div>,
 
@@ -211,15 +216,15 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiCellphoneFill className="z-10 size-5 rotate-0 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-gray-500 p-1 text-xs ring-1 ring-gray-200">
-                          <RiLoaderFill className="size-3 shrink-0 animate-spin text-white" />
+                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
+                          <RiCheckLine className="size-3 shrink-0 text-white" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
-                          Charging
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 whitespace-nowrap">
+                          SMS Marketing
                         </div>
                       </div>
                     </div>
@@ -227,7 +232,7 @@ export default function Features() {
                       style={{
                         animationDelay: "4s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
                     ></div>
                   </div>,
 
@@ -235,28 +240,38 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <RiCarFill className="z-10 size-5 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
-                    <div
-                      style={{
-                        animationDelay: "2s",
-                      }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
-                    ></div>
-                  </div>,
-                  <div
-                    key="obj4"
-                    className="relative flex items-center justify-center"
-                  >
-                    <Icons.QuadCopter className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiCustomerService2Fill className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
                           <RiCheckLine className="size-3 shrink-0 text-white" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
-                          Farming
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
+                          CRM Integrations
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        animationDelay: "2s",
+                      }}
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
+                    ></div>
+                  </div>,
+                  <div
+                    key="obj4"
+                    className="relative flex items-center justify-center"
+                  >
+                    <RiShoppingCart2Fill className="z-10 size-5 rotate-0 text-gray-900" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <div className="absolute -top-5 left-4">
+                      <div className="flex gap-1">
+                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
+                          <RiCheckLine className="size-3 shrink-0 text-white" />
+                        </div>
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
+                          E-commerce
                         </div>
                       </div>
                     </div>
@@ -265,20 +280,31 @@ export default function Features() {
                       style={{
                         animationDelay: "6s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
                     ></div>
                   </div>,
                   <div
                     key="obj5"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiCloudFill className="z-10 size-5 rotate-0 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <div className="absolute -top-5 left-4">
+                      <div className="flex gap-1">
+                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
+                          <RiCheckLine className="size-3 shrink-0 text-white" />
+                        </div>
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
+                          Cloud Computing
+                        </div>
+                      </div>
+                    </div>
+
                     <div
                       style={{
                         animationDelay: "3s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
                     ></div>
                   </div>,
                 ]}
@@ -288,7 +314,7 @@ export default function Features() {
                     <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20">
                       <SolarMark className="size-10" />
                     </div>
-                    <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-orange-400 to-transparent blur-lg" />
+                    <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-teal-400 to-transparent blur-lg" />
                   </div>
                 </div>
               </Orbit>
@@ -297,18 +323,19 @@ export default function Features() {
         </div>
 
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Precision Agriculture
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-teal-500">
+            Precision Analytics
+            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            Turn every acre into a data-driven powerhouse
+            Turn every pixel into a data-driven powerhouse
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Revolutionize your farming operation with edge-computing AI that
-            transforms raw field data into actionable insights in real-time.
-            Make informed decisions faster, reduce resource waste, and maximize
-            yields.
+            Revolutionize your digital presence with real-time analytics that
+            transform raw user data into actionable insights. Make informed
+            decisions faster, reduce resource waste, and maximize your return on
+            investment—all by harnessing the power of precision insights across
+            every touchpoint.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -321,7 +348,7 @@ export default function Features() {
                 height="64"
               >
                 {Array.from({ length: 17 }, (_, i) => {
-                  const offset = i * 8
+                  const offset = i * 8;
                   return (
                     <path
                       key={i}
@@ -329,7 +356,7 @@ export default function Features() {
                       className="stroke-gray-200/70"
                       strokeWidth="1"
                     />
-                  )
+                  );
                 })}
               </pattern>
             </defs>
@@ -360,10 +387,10 @@ export default function Features() {
               </div>
               <div className="absolute top-[144px] left-[48px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      14°C
+                      <RiUserFill className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -371,10 +398,10 @@ export default function Features() {
 
               <div className="absolute top-[48px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      18°C
+                      <RiUser2Line className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -382,10 +409,10 @@ export default function Features() {
 
               <div className="absolute top-[96px] left-[240px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      17°C
+                      <RiUser3Fill className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -393,10 +420,10 @@ export default function Features() {
 
               <div className="absolute top-[240px] left-[385px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      14°C
+                      <RiUser4Line className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -404,10 +431,10 @@ export default function Features() {
 
               <div className="absolute top-[337px] left-[336px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      12°C
+                      <RiUser5Fill className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -415,10 +442,10 @@ export default function Features() {
 
               <div className="absolute top-[288px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
+                  <div className="absolute inset-0 size-12 animate-pulse bg-teal-200 blur-[3px]"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
                     <span className="text-sm font-medium text-gray-500">
-                      17°C
+                      <RiUser6Line className="size-5 text-gray-900" />
                     </span>
                   </div>
                 </div>
@@ -427,17 +454,18 @@ export default function Features() {
           </div>
         </div>
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-orange-500">
-            Easy Expansion
-            <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
+          <h2 className="relative text-lg font-semibold tracking-tight text-teal-500">
+            Robust Integrations
+            <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-teal-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            Scale your smart farm with plug-and-play simplicity
+            Scale your digital solution with plug-and-play simplicity
           </p>
           <p className="mt-4 text-balance text-gray-700">
-            Add new sensors and capabilities to your farm network with zero
-            setup required. Our systems automatically connect and coordinate
-            with each other.
+            Seamlessly integrate new digital tools and services into your
+            existing infrastructure. Our solutions ensure effortless
+            connectivity and coordination, allowing you to expand capabilities
+            without any hassle.
           </p>
         </div>
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
@@ -456,7 +484,7 @@ export default function Features() {
                 height="64"
               >
                 {Array.from({ length: 17 }, (_, i) => {
-                  const offset = i * 8
+                  const offset = i * 8;
                   return (
                     <path
                       key={i}
@@ -464,7 +492,7 @@ export default function Features() {
                       className="stroke-gray-200/70"
                       strokeWidth="1"
                     />
-                  )
+                  );
                 })}
               </pattern>
             </defs>
@@ -527,7 +555,7 @@ export default function Features() {
                   <div className="relative">
                     <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent" />
                     <div
-                      className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-orange-300 to-transparent"
+                      className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-teal-300 to-transparent"
                       style={{
                         animation: `gridMovingLine 5s linear infinite ${index * 1.2}s`,
                         animationFillMode: "backwards",
@@ -544,5 +572,5 @@ export default function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }

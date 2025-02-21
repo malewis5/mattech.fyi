@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "../Button"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "../Button";
 
 export function CallToAction() {
   return (
@@ -22,7 +22,7 @@ export function CallToAction() {
               <Link href="#">Start now</Link>
             </Button>
             <Button asChild className="text-md" variant="secondary">
-              <Link href="#">Find nearest dealer</Link>
+              <Link href="#">Join our Newsletter</Link>
             </Button>
           </div>
         </div>
@@ -37,7 +37,7 @@ export function CallToAction() {
           />
           <Image
             alt="Farm with vehicles"
-            src="/images/farm-footer.webp"
+            src="/images/footer.png"
             height={1000}
             width={1000}
             className="relative z-10 rounded-2xl"
@@ -45,7 +45,7 @@ export function CallToAction() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default CallToAction
+export default CallToAction;

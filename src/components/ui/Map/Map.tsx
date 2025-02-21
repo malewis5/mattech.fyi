@@ -1,11 +1,11 @@
-import { Icons } from "@/components/Icons"
+import { Icons } from "@/components/Icons";
 import {
   RiHome9Fill,
   RiPlaneLine,
   RiSignalTowerFill,
   RiTruckFill,
-} from "@remixicon/react"
-import { SVGMap } from "./SVGMap"
+} from "@remixicon/react";
+import { SVGMap } from "./SVGMap";
 
 export const Map = () => {
   return (
@@ -30,7 +30,7 @@ export const Map = () => {
               height="64"
             >
               {Array.from({ length: 17 }, (_, i) => {
-                const offset = i * 8
+                const offset = i * 8;
                 return (
                   <path
                     key={i}
@@ -38,7 +38,7 @@ export const Map = () => {
                     stroke=""
                     strokeWidth="1"
                   />
-                )
+                );
               })}
             </pattern>
           </defs>
@@ -65,7 +65,7 @@ export const Map = () => {
               height="64"
             >
               {Array.from({ length: 17 }, (_, i) => {
-                const offset = i * 8
+                const offset = i * 8;
                 return (
                   <path
                     key={i}
@@ -73,7 +73,7 @@ export const Map = () => {
                     stroke=""
                     strokeWidth="1"
                   />
-                )
+                );
               })}
             </pattern>
           </defs>
@@ -85,7 +85,7 @@ export const Map = () => {
         </svg>
       </div>
 
-      <div className="pt-12 text-base font-semibold tracking-tight text-orange-400 sm:pt-20 sm:text-lg">
+      <div className="pt-12 text-base font-semibold tracking-tight text-teal-400 sm:pt-20 sm:text-lg">
         Farm Management
       </div>
       <h2
@@ -113,7 +113,7 @@ export const Map = () => {
               style={{
                 animationDelay: "3.5s",
               }}
-              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
             ></div>
           </div>
         </div>
@@ -128,7 +128,7 @@ export const Map = () => {
               style={{
                 animationDelay: "3.5s",
               }}
-              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
             ></div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export const Map = () => {
               style={{
                 animationDelay: "3.5s",
               }}
-              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-orange-500/50"
+              className="absolute size-10 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-teal-500/50"
             ></div>
           </div>
         </div>
@@ -170,5 +170,5 @@ export const Map = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

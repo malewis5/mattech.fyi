@@ -1,11 +1,11 @@
-"use client"
-import { motion } from "motion/react"
+"use client";
+import { motion } from "motion/react";
 
-import type { SVGProps } from "react"
+import type { SVGProps } from "react";
 
 export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
-  const width = 481
-  const height = 201
+  const width = 481;
+  const height = 201;
   return (
     <svg
       viewBox={`0 0 ${width} ${height}`}
@@ -551,7 +551,7 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
         strokeWidth="0.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="stroke-orange-400/30"
+        className="stroke-teal-400/30"
       />
 
       <path
@@ -566,7 +566,7 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
         strokeWidth="0.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="stroke-orange-400/30"
+        className="stroke-teal-400/30"
       />
 
       <path
@@ -605,14 +605,14 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
       {/* Dashed Beams */}
       <path
         d="M342.5 28L85 -1"
-        className="animate-dashesReverse stroke-orange-400/30"
+        className="animate-dashesReverse stroke-teal-400/30"
         strokeWidth="1"
         strokeLinecap="square"
         strokeDasharray="2 5"
       />
       <path
         d="M341.5 27L296 83.5"
-        className="animate-dashesReverse stroke-orange-400/30"
+        className="animate-dashesReverse stroke-teal-400/30"
         strokeWidth="1"
         strokeLinecap="square"
         strokeDasharray="2 5"
@@ -645,7 +645,7 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
           height="64"
         >
           {Array.from({ length: 34 }, (_, i) => {
-            const offset = i * 4
+            const offset = i * 4;
             return (
               <path
                 key={i}
@@ -653,7 +653,7 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
                 className="stroke-blue-400/60"
                 strokeWidth="0.5"
               />
-            )
+            );
           })}
         </pattern>
         <pattern
@@ -669,9 +669,9 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
                 cx={i * 4 + 2}
                 cy={j * 4 + 2}
                 r="0.5"
-                className="fill-orange-400/30"
+                className="fill-teal-400/30"
               />
-            )),
+            ))
           )}
         </pattern>
         <motion.linearGradient
@@ -718,8 +718,8 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
         </motion.linearGradient>
       </defs>
     </svg>
-  )
-}
+  );
+};
 
 const GradientColors = () => {
   return (
@@ -728,5 +728,5 @@ const GradientColors = () => {
       <stop offset="0.325" stopColor="#fb923c" />
       <stop offset="1" stopColor="#fb923c" stopOpacity="0" />
     </>
-  )
-}
+  );
+};
