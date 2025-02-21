@@ -29,7 +29,7 @@ export function NavBar() {
             <MatTechMark className="w-22" />
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-            <div className="flex items-center gap-10 font-medium">
+            {/* <div className="flex items-center gap-10 font-medium">
               <Link className="px-2 py-1 text-gray-900" href="#solutions">
                 Solutions
               </Link>
@@ -39,7 +39,7 @@ export function NavBar() {
               <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
                 Analytics
               </Link>
-            </div>
+            </div> */}
           </nav>
           <Link href="/quote" passHref>
             <Button
