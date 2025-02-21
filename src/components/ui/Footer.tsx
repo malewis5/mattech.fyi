@@ -1,51 +1,45 @@
-import {
-  RiGithubFill,
-  RiSlackFill,
-  RiTwitterXFill,
-  RiYoutubeFill,
-} from "@remixicon/react";
 import Link from "next/link";
 // import { SolarLogo } from "../../../public/SolarLogo";
 const CURRENT_YEAR = new Date().getFullYear();
 
 const Footer = () => {
-  const sections = {
-    // company: {
-    //   title: "Company",
-    //   items: [
-    //     { label: "About us", href: "#" },
-    //     { label: "Blog", href: "#" },
-    //     { label: "Careers", href: "#" },
-    //     { label: "Success Stories", href: "#" },
-    //     { label: "Sustainability", href: "#" },
-    //   ],
-    // },
-    // resources: {
-    //   title: "Resources",
-    //   items: [
-    //     { label: "Farmer Network", href: "#" },
-    //     {
-    //       label: "Community",
-    //       href: "#",
-    //       external: true,
-    //     },
-    //     { label: "Contact", href: "#" },
-    //     { label: "Support", href: "#" },
-    //     { label: "Privacy Policy", href: "#" },
-    //     { label: "Terms of Service", href: "#" },
-    //     { label: "Report an Issue", href: "#" },
-    //   ],
-    // },
-    // partners: {
-    //   title: "Partners",
-    //   items: [
-    //     { label: "Dealer Network", href: "#", external: true },
-    //     { label: "System Status", href: "#", external: true },
-    //     { label: "Research Partners", href: "#", external: true },
-    //     { label: "Integration Guide", href: "#" },
-    //   ],
-    // },
-  };
+  // const sections = {
+  //   // company: {
+  //   //   title: "Company",
+  //   //   items: [
+  //   //     { label: "About us", href: "#" },
+  //   //     { label: "Blog", href: "#" },
+  //   //     { label: "Careers", href: "#" },
+  //   //     { label: "Success Stories", href: "#" },
+  //   //     { label: "Sustainability", href: "#" },
+  //   //   ],
+  //   // },
+  //   // resources: {
+  //   //   title: "Resources",
+  //   //   items: [
+  //   //     { label: "Farmer Network", href: "#" },
+  //   //     {
+  //   //       label: "Community",
+  //   //       href: "#",
+  //   //       external: true,
+  //   //     },
+  //   //     { label: "Contact", href: "#" },
+  //   //     { label: "Support", href: "#" },
+  //   //     { label: "Privacy Policy", href: "#" },
+  //   //     { label: "Terms of Service", href: "#" },
+  //   //     { label: "Report an Issue", href: "#" },
+  //   //   ],
+  //   // },
+  //   // partners: {
+  //   //   title: "Partners",
+  //   //   items: [
+  //   //     { label: "Dealer Network", href: "#", external: true },
+  //   //     { label: "System Status", href: "#", external: true },
+  //   //     { label: "Research Partners", href: "#", external: true },
+  //   //     { label: "Integration Guide", href: "#" },
+  //   //   ],
+  //   // },
+  // };
 
   return (
     <div className="px-4 xl:px-0">

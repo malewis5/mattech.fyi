@@ -6,7 +6,6 @@ import { cx } from "@/lib/utils";
 import { RiCloseFill, RiMenuFill } from "@remixicon/react";
 import Link from "next/link";
 import React from "react";
-import { SolarLogo } from "../../../public/SolarLogo";
 import { Button } from "../Button";
 import { MatTechMark } from "../../../public/MatTechMark";
 
@@ -42,12 +41,14 @@ export function NavBar() {
               </Link>
             </div>
           </nav>
-          <Button
-            variant="secondary"
-            className="hidden h-10 font-semibold sm:block"
-          >
-            Get a quote
-          </Button>
+          <Link href="/quote" passHref>
+            <Button
+              variant="secondary"
+              className="hidden h-10 font-semibold sm:block"
+            >
+              Get a quote
+            </Button>
+          </Link>
           <Button
             onClick={() => setOpen(!open)}
             variant="secondary"
@@ -84,9 +85,11 @@ export function NavBar() {
               <Link href="#solar-analytics">Analytics</Link>
             </li>
           </ul>
-          <Button variant="secondary" className="text-lg">
-            Get a quote
-          </Button>
+          <Link href="/quote" passHref>
+            <Button variant="secondary" className="w-full text-lg">
+              Get a quote
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>

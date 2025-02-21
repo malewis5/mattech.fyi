@@ -2,7 +2,6 @@ import { CallToAction } from "@/components/ui/CallToAction";
 import FeatureDivider from "@/components/ui/FeatureDivider";
 import Features from "@/components/ui/Features";
 import { Hero } from "@/components/ui/Hero";
-import { Map } from "@/components/ui/Map/Map";
 import { SolarAnalytics } from "@/components/ui/SolarAnalytics";
 import Testimonial from "@/components/ui/Testimonial";
 
