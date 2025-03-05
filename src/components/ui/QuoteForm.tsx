@@ -24,6 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { submitForm } from "@/app/actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -37,7 +38,7 @@ const formSchema = z.object({
     .max(2000, "Description cannot exceed 2000 characters"),
 });
 
-type FormValues = z.infer<typeof formSchema>;
+export type FormValues = z.infer<typeof formSchema>;
 
 export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -59,9 +60,12 @@ export function QuoteForm() {
   async function onSubmit(values: FormValues) {
     setIsSubmitting(true);
     try {
-      console.log(values);
+      console.log("values", values);
+      await submitForm(values);
       toast.success("Quote request submitted", {
         description: "We'll get back to you as soon as possible.",
+        dismissible: true,
+        closeButton: true,
       });
       form.reset({
         firstName: "",
@@ -196,13 +200,11 @@ export function QuoteForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="10k-24k">$10,000 - $24,999</SelectItem>
+                      <SelectItem value="5k-less">$5,000 or less</SelectItem>
+                      <SelectItem value="5k-24k">$5,000 - $24,999</SelectItem>
                       <SelectItem value="25k-49k">$25,000 - $49,999</SelectItem>
                       <SelectItem value="50k-99k">$50,000 - $99,999</SelectItem>
-                      <SelectItem value="100k-249k">
-                        $100,000 - $249,999
-                      </SelectItem>
-                      <SelectItem value="250k-plus">$250,000+</SelectItem>
+                      <SelectItem value="100k-plus">$100,000+</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
