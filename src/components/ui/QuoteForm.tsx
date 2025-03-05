@@ -59,6 +59,7 @@ export function QuoteForm() {
   async function onSubmit(values: FormValues) {
     setIsSubmitting(true);
     try {
+      console.log(values);
       toast.success("Quote request submitted", {
         description: "We'll get back to you as soon as possible.",
       });
