@@ -6,6 +6,7 @@ import Footer from "@/components/ui/Footer";
 import { NavBar } from "@/components/ui/Navbar";
 import { siteConfig } from "./siteConfig";
 import { TrackingScripts } from "./scripts";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mattech.fyi"),
@@ -51,6 +52,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <Toaster />
         <TrackingScripts />
       </body>
     </html>

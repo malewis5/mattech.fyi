@@ -1,155 +1,211 @@
 "use client";
 
-import { Divider } from "../Divider";
-import { Input } from "../Input";
+import { useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { toast } from "sonner";
+// import { submitQuoteForm } from "@/actions/quote-form";
 
-export default function QuoteForm() {
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+const formSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Invalid email address"),
+  address: z.string().optional(),
+  city: z.string().optional(),
+  state: z.string().optional(),
+  postalCode: z.string().optional(),
+});
+
+type FormValues = z.infer<typeof formSchema>;
+
+export function QuoteForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const form = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      address: "",
+      city: "",
+      state: "",
+      postalCode: "",
+    },
+  });
+
+  async function onSubmit(values: FormValues) {
+    setIsSubmitting(true);
+    try {
+      // await submitQuoteForm(values);
+      toast("Event has been created", {
+        description: "Sunday, December 03, 2023 at 9:00 AM",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast("Error submitting form", {
+        description: "Sunday, December 03, 2023 at 9:00 AM",
+        action: {
+          label: "Try again",
+          onClick: () => console.log("Undo"),
+        },
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
-    <>
-      <div className="sm:mx-auto sm:max-w-2xl">
-        <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-          Get a Quote
-        </h3>
-        <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
+    <Card className="w-full max-w-3xl mx-auto">
+      <CardHeader>
+        <CardTitle>Get a Quote</CardTitle>
+        <CardDescription>
           Fill out the form below to receive a quote for our services.
-        </p>
-        <form action="#" method="post" className="mt-8">
-          <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-6">
-            <div className="col-span-full sm:col-span-3">
-              <label
-                htmlFor="first-name"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                First name
-                <span className="text-red-500">*</span>
-              </label>
-              <Input
-                type="text"
-                id="first-name"
-                name="first-name"
-                autoComplete="first-name"
-                placeholder="First name"
-                className="mt-2"
-                required
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="firstName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>
+                      First name<span className="text-destructive">*</span>
+                    </FormLabel>
+                    <FormControl>
+                      <Input placeholder="First name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>
+                      Last name<span className="text-destructive">*</span>
+                    </FormLabel>
+                    <FormControl>
+                      <Input placeholder="Last name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
             </div>
-            <div className="col-span-full sm:col-span-3">
-              <label
-                htmlFor="last-name"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                Last name
-                <span className="text-red-500">*</span>
-              </label>
-              <Input
-                type="text"
-                id="last-name"
-                name="last-name"
-                autoComplete="last-name"
-                placeholder="Last name"
-                className="mt-2"
-                required
-              />
-            </div>
-            <div className="col-span-full">
-              <label
-                htmlFor="email"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                Email
-                <span className="text-red-500">*</span>
-              </label>
-              <Input
-                type="email"
-                id="email"
-                name="email"
-                autoComplete="email"
-                placeholder="Email"
-                className="mt-2"
-                required
-              />
-            </div>
-            <div className="col-span-full">
-              <label
-                htmlFor="address"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                Address
-              </label>
-              <Input
-                type="text"
-                id="address"
-                name="address"
-                autoComplete="street-address"
-                placeholder="Address"
-                className="mt-2"
-              />
-            </div>
-            <div className="col-span-full sm:col-span-2">
-              <label
-                htmlFor="city"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                City
-              </label>
-              <Input
-                type="text"
-                id="city"
+
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Email<span className="text-destructive">*</span>
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Email" type="email" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="address"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Address</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Address" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <FormField
+                control={form.control}
                 name="city"
-                autoComplete="address-level2"
-                placeholder="City"
-                className="mt-2"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>City</FormLabel>
+                    <FormControl>
+                      <Input placeholder="City" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
-            </div>
-            <div className="col-span-full sm:col-span-2">
-              <label
-                htmlFor="state"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                State
-              </label>
-              <Input
-                type="text"
-                id="state"
+              <FormField
+                control={form.control}
                 name="state"
-                autoComplete="address-level1"
-                placeholder="State"
-                className="mt-2"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>State</FormLabel>
+                    <FormControl>
+                      <Input placeholder="State" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="postalCode"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Postal code</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Postal code" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
               />
             </div>
-            <div className="col-span-full sm:col-span-2">
-              <label
-                htmlFor="postal-code"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+
+            <div className="flex justify-end gap-4">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => form.reset()}
               >
-                Postal code
-              </label>
-              <Input
-                id="postal-code"
-                name="postal-code"
-                autoComplete="postal-code"
-                placeholder="Postal code"
-                className="mt-2"
-              />
+                Cancel
+              </Button>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </Button>
             </div>
-          </div>
-          <Divider />
-          <div className="flex items-center justify-end space-x-4">
-            <button
-              type="button"
-              className="whitespace-nowrap rounded-tremor-small px-4 py-2.5 text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="whitespace-nowrap rounded-tremor-default bg-tremor-brand px-4 py-2.5 text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis dark:bg-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-brand-emphasis"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
+          </form>
+        </Form>
+      </CardContent>
+    </Card>
   );
 }
