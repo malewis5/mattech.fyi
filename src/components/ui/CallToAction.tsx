@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../Button";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export function CallToAction() {
   return (
@@ -18,12 +18,12 @@ export function CallToAction() {
             about your specific needs.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="text-md">
-              <Link href="#">Start now</Link>
-            </Button>
-            <Button asChild className="text-md" variant="secondary">
-              <Link href="#">Join our Newsletter</Link>
-            </Button>
+            <Link
+              href="/quote"
+              className={buttonVariants({ variant: "default" })}
+            >
+              Start now
+            </Link>
           </div>
         </div>
         <div className="relative isolate rounded-xl sm:col-span-4 sm:h-full">

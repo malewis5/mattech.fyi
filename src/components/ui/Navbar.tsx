@@ -6,7 +6,7 @@ import { cx } from "@/lib/utils";
 import { RiCloseFill, RiMenuFill } from "@remixicon/react";
 import Link from "next/link";
 import React from "react";
-import { Button } from "../Button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { MatTechMark } from "../../../public/MatTechMark";
 
 export function NavBar() {
@@ -41,32 +41,12 @@ export function NavBar() {
               </Link>
             </div> */}
           </nav>
-          <Link href="/quote" passHref>
-            <Button
-              variant="primary"
-              className="hidden h-10 font-semibold sm:block"
-            >
-              Get a quote
-            </Button>
-          </Link>
-          <Button
-            onClick={() => setOpen(!open)}
-            variant="secondary"
-            className="p-1.5 sm:hidden"
-            aria-label={open ? "CloseNavigation Menu" : "Open Navigation Menu"}
+          <Link
+            href="/quote"
+            className={buttonVariants({ variant: "default" })}
           >
-            {!open ? (
-              <RiMenuFill
-                className="size-6 shrink-0 text-gray-900"
-                aria-hidden
-              />
-            ) : (
-              <RiCloseFill
-                className="size-6 shrink-0 text-gray-900"
-                aria-hidden
-              />
-            )}
-          </Button>
+            Get a quote
+          </Link>
         </div>
         <nav
           className={cx(
@@ -85,10 +65,14 @@ export function NavBar() {
               <Link href="#solar-analytics">Analytics</Link>
             </li>
           </ul>
-          <Link href="/quote" passHref>
-            <Button variant="secondary" className="w-full text-lg">
-              Get a quote
-            </Button>
+          <Link
+            href="/quote"
+            className={cx(
+              "w-full text-lg",
+              buttonVariants({ variant: "secondary" })
+            )}
+          >
+            Get a quote
           </Link>
         </nav>
       </div>

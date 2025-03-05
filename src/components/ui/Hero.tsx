@@ -1,8 +1,9 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade";
 import GameOfLife from "./HeroBackground";
-import { Button } from "../Button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { cx } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -43,10 +44,11 @@ export function Hero() {
           </FadeSpan>
         </p>
         <FadeDiv>
-          <Link href="/quote" passHref>
-            <Button className="mt-6" variant="secondary">
-              Let's Get Started
-            </Button>
+          <Link
+            href="/quote"
+            className={cx("mt-6", buttonVariants({ variant: "default" }))}
+          >
+            Let's Get Started
           </Link>
         </FadeDiv>
         <div className="absolute inset-0 -z-10 flex items-center justify-center">

@@ -1,8 +1,9 @@
-import { Button } from "@/components/Button"
-import Link from "next/link"
-import { siteConfig } from "./siteConfig"
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { siteConfig } from "./siteConfig";
 
-import { SolarLogo } from "../../public/SolarLogo"
+import { SolarLogo } from "../../public/SolarLogo";
+import { cx } from "@/lib/utils";
 
 export default function NotFound() {
   return (
@@ -19,9 +20,12 @@ export default function NotFound() {
       <p className="mt-2 text-sm text-gray-600">
         Sorry, we couldn’t find the page you’re looking for.
       </p>
-      <Button asChild className="group mt-8" variant="light">
-        <Link href={siteConfig.baseLinks.home}>Go to the home page</Link>
-      </Button>
+      <Link
+        href={siteConfig.baseLinks.home}
+        className={cx(buttonVariants({ variant: "default" }), "mt-8")}
+      >
+        Go to the home page
+      </Link>
     </div>
-  )
+  );
 }
