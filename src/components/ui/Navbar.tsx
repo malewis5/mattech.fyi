@@ -2,7 +2,7 @@
 
 import { siteConfig } from "@/app/siteConfig";
 import useScroll from "@/lib/useScroll";
-import { cx } from "@/lib/utils";
+import { cn, cx } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { buttonVariants } from "@/components/ui/button";
@@ -40,12 +40,23 @@ export function NavBar() {
               </Link>
             </div> */}
           </nav>
-          <Link
-            href="/quote"
-            className={buttonVariants({ variant: "default" })}
-          >
-            Get a quote
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href={process.env.NEXT_PUBLIC_CAL_BOOKING_LINK!}
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "bg-teal-500 hover:bg-teal-500"
+              )}
+            >
+              Book a Meeting
+            </Link>
+            <Link
+              href="/quote"
+              className={buttonVariants({ variant: "default" })}
+            >
+              Get a quote
+            </Link>
+          </div>
         </div>
         <nav
           className={cx(

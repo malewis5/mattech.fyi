@@ -1,7 +1,7 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade";
 import GameOfLife from "./HeroBackground";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { cx } from "@/lib/utils";
 
@@ -11,8 +11,8 @@ export function Hero() {
       <FadeContainer className="relative flex flex-col items-center justify-center">
         <FadeDiv className="mx-auto">
           <Link
-            aria-label="Get a quote"
-            href="/quote"
+            aria-label="Book a meeting"
+            href={process.env.NEXT_PUBLIC_CAL_BOOKING_LINK!}
             className="mx-auto w-full"
           >
             <div className="inline-flex max-w-full items-center gap-3 rounded-full bg-white/5 px-2.5 py-0.5 pr-3 pl-0.5 font-medium text-gray-900 ring-1 shadow-lg shadow-teal-400/20 ring-black/10 filter backdrop-blur-[1px] transition-colors hover:bg-teal-500/[2.5%] focus:outline-hidden sm:text-sm">
