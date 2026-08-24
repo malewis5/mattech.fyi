@@ -1,42 +1,47 @@
-# Spotlight
+# Tremor – Solar
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+`Solar` is a website template from [Tremor](https://tremor.so). It's built
+using [`Tremor`](https://tremor.so/docs/getting-started/installation) and
+[Next.js](https://nextjs.org).
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+1. Install the dependencies. We recommend using pnpm. If you want to use `npm`,
+   just replace `pnpm` with `npm`.
 
 ```bash
-npm install
+pnpm install
 ```
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
-
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
-
-Next, run the development server:
+2. Then, start the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+3. Visit [http://localhost:3000](http://localhost:3000) in your browser to view
+   the template.
 
-## Customizing
+## Notes
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+This project uses
+[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
+automatically optimize and load Inter, a custom Google Font.
+
+This project uses
+[`Tremor`](https://raw.tremor.so/docs/getting-started/installation) components
+for the UI.
 
 ## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+This site template is a commercial product and is licensed under the
+[Tremor License](https://blocks.tremor.so/license).
 
 ## Learn more
 
-To learn more about the technologies used in this site template, see the following resources:
+For a deeper understanding of the technologies used in this template, check out
+the resources listed below:
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+- [Tailwind CSS v4 beta](https://tailwindcss.com) - A utility-first CSS framework
+- [Next.js](https://nextjs.org/docs) - Next.js documentation
+- [Radix UI](https://www.radix-ui.com) - Radix UI Website
